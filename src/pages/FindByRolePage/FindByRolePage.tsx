@@ -6,14 +6,8 @@ const FindByRolePage = () => {
     setTimeout(() => {
       setTitleShow(!titleShow);
     }, 1500);
-  })
-  return (
-    <div>
-      {
-        titleShow && <h1>이제 보입니다.</h1>
-      }
-    </div>
-  );
+  });
+  return <div>{titleShow && <h1>이제 보입니다.</h1>}</div>;
 };
 
 export default FindByRolePage;

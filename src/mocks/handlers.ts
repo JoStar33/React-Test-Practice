@@ -6,23 +6,27 @@ export const handlers = [
   // Match a GET request to a third-party server.
   rest.get('https://jsonplaceholder.typicode.com/todos', (req, res, ctx) => {
     return res(
-      ctx.status(200), 
-      ctx.json([{
-        userId: 0,
-        id: 3,
-        title: "안녕",
-        completed: true
-      }, {
-        userId: 0,
-        id: 2,
-        title: "뭘까",
-        completed: true
-      }, {
-        userId: 0,
-        id: 4,
-        title: "히히",
-        completed: true
-      }])
-    )
+      ctx.status(200),
+      ctx.json([
+        {
+          userId: 0,
+          id: 3,
+          title: '안녕',
+          completed: true,
+        },
+        {
+          userId: 0,
+          id: 2,
+          title: '뭘까',
+          completed: true,
+        },
+        {
+          userId: 0,
+          id: 4,
+          title: '히히',
+          completed: true,
+        },
+      ]),
+    );
   }),
-]
+];

@@ -11,8 +11,8 @@ test('renders learn react link', () => {
   expect(linkElement).toBeInTheDocument();
 });
 
-test("로고 이미지가 잘 나온다.", () => {
-  render(<App/>);
-  const logoEl = screen.getByAltText("logo");
+test('로고 이미지가 잘 나온다.', () => {
+  render(<App />);
+  const logoEl = screen.getByAltText('logo');
   expect(logoEl).toBeInTheDocument();
-})
+});
