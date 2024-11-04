@@ -1,4 +1,5 @@
 import { S } from './LikeButton.style';
+import Icon from '@/icons';
 
 interface Props {
   isLikeClick: boolean;
@@ -6,5 +7,7 @@ interface Props {
 }
 
 export default function LikeButton({ isLikeClick, handleClick }: Props) {
-  return <S.LikeButton>좋아요 버튼</S.LikeButton>;
+  return (
+    <S.LikeButton onClick={handleClick}>{isLikeClick ? <Icon name="LikeColor1" /> : <Icon name="LikeColor2" />}좋아요 버튼</S.LikeButton>
+  );
 }
