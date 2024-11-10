@@ -1,6 +1,7 @@
 import { render, screen } from '@testing-library/react';
-import ApiTestPage from './ApiTestPage';
+import ApiTestPage from '@/pages/ApiTestPage';
 import { server } from '../../mocks/server';
+import 'cross-fetch/polyfill';
 import { rest } from 'msw';
 
 //재밌는건 이거임. 아래 테스트 통과 됐습니다. 왜 통과됐을까?

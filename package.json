@@ -60,6 +60,8 @@
     ]
   },
   "devDependencies": {
+    "@babel/preset-react": "^7.25.9",
+    "@babel/preset-typescript": "^7.26.0",
     "@storybook/addon-actions": "^6.5.16",
     "@storybook/addon-essentials": "^6.5.16",
     "@storybook/addon-interactions": "^6.5.16",
@@ -74,6 +76,7 @@
     "@types/styled-components": "^5.1.26",
     "@typescript-eslint/parser": "^5.62.0",
     "babel-plugin-named-exports-order": "^0.0.2",
+    "cross-fetch": "^4.0.0",
     "eslint": "^8.57.1",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",

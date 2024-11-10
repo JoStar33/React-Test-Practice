@@ -19,6 +19,7 @@ const ApiTestPage = () => {
         setErrorMsg('에러 발생...');
       });
   }, []);
+
   return (
     <>
       {errorMsg && <h1>{errorMsg}</h1>}
